@@ -1,0 +1,157 @@
+.productList {
+  padding: 0 20px;
+  margin-top: 40px;
+  align-items: center;
+
+  .info {
+    box-shadow: darkgrey 1px 5px 10px 2px;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .cateryName {
+      font-size: 36px;
+      color: #000000;
+    }
+
+    .desc {
+      width: 100%;
+      background-color: #F14122;
+      border-radius: 20px;
+      color: #ffffff;
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .productImgBox {
+    border-radius: 20px;
+    height: 246px;
+    overflow: hidden;
+    width: 325px;
+
+    .time {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      background-color: #FE352E;
+      color: #fff;
+      padding: 8px 14px;
+      font-size: 23px;
+      border-radius: 0 0 0 10px;
+    }
+  }
+
+  .product {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    img {
+      height: 246px;
+      width: 325px;
+      border-radius: 20px;
+    }
+
+    .info {
+      border-radius: 0 20px 20px 0;
+      background-color: #ffffff;
+      height: 200px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 10px;
+      overflow: hidden;
+      color: #000000;
+
+      .name {
+        width: 100%;
+        text-align: left;
+        font-size: 26px;
+        font-family: Source Han Sans CN;
+        font-weight: 400;
+        color: #141414;
+        line-height: 36px;
+      }
+
+      .desc {
+        font-size: 22px;
+        color: #8C8C8C;
+        margin-right: 10px;
+        overflow: hidden;
+        white-space: nowrap;
+      }
+
+      .mess {
+        text-align: right;
+        width: 100%;
+
+        .price {
+          color: #FF3A30;
+          font-size: 35px;
+        }
+
+        .sall {
+          font-weight: 400;
+          color: #9A9A9A;
+          font-size: 22px;
+          margin-right: 10px;
+        }
+      }
+
+      .shopName {
+        font-size: 25px;
+        text-align: right;
+        width: 100%;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .more {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+
+    span {
+      background-color: #F14122;
+      color: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      width: 200px;
+    }
+  }
+}
+
+.imgBox {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0.5;
+  height: 100%;
+  width: 100%;
+}
+
+.avadar {
+  height: 100%;
+  width: 100%;
+}
+
+.productImgBox {
+  position: relative;
+}
+
+.mask {
+  background-color: rgba(247, 247, 247, 1) !important;
+  z-index: 100;
+}
