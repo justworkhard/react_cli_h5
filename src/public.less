@@ -1,0 +1,51 @@
+@black: #202f3d;
+
+@lineGray: #e3e3e3;
+@midGray: #e3e3e3;
+@darkGray: #888888;
+
+.flexClCeCe {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.oneLineEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.twoLineEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 2;
+  white-space: pre-wrap;
+}
+.threeLineEllipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: 3;
+  white-space: pre-wrap;
+}
+.midleLine {
+  position: relative;
+  &::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 100%;
+    color: #000;
+    background-color: #000;
+    left: 0px;
+    top: 50%;
+  }
+}

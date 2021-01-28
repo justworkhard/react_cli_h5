@@ -1,0 +1,199 @@
+.shopCar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #F1F1F1;
+  height: 100%;
+  overflow-x: scroll;
+
+  .header {
+    position: absolute;
+    padding-top: 20px;
+    height: 220px;
+    width: 100%;
+    background: linear-gradient(to right, #FF6351, #FF9C55);
+
+    .title {
+      color: #fff;
+      font-weight: 500;
+      font-size: 40px;
+    }
+
+    .acount {
+      position: absolute;
+      color: #fff;
+      font-size: 30px;
+      left: 20px;
+      // top: 100px;
+    }
+  }
+
+  .avadarBox {
+    position: relative;
+
+    .soldOut {
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      height: 100%;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .contetnBox {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F1F1;
+    height: 100%;
+    overflow-x: scroll;
+  }
+
+  .storeList {
+    flex: 1;
+  }
+
+  .contentBody {
+    background-color: #EFEFEF;
+    overflow: scroll;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    .shopItem {
+      // transform: translateY(-140px);
+      border-radius: 20px;
+      background-color: #fff;
+      margin: 0px 20px 20px 20px;
+      position: relative;
+
+      &:first-child {
+        margin-top: 120px;
+      }
+
+      .shopName {
+        padding: 10px 20px;
+        font-size: 30px;
+        text-align: left;
+      }
+
+      .shopProduct {
+        display: flex;
+        padding: 20px 20px 20px 0;
+        margin-left: 20px;
+        align-items: center;
+        flex-direction: column;
+
+        border-bottom: 1px solid #999999;
+
+        &:last-child {
+          border: none;
+        }
+
+        .contentBox {
+          display: flex;
+          align-items: center;
+          width: 100%;
+        }
+
+        .delete {
+          text-align: right;
+          width: 100%;
+
+        }
+
+        .shopAvadar {
+          width: 230px;
+          height: 200px;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+          padding-left: 20px;
+          flex: 1;
+          width: 100%;
+          height: 200px;
+
+          .hotelName {
+            font-size: 28px;
+            font-weight: 400;
+            text-align: left;
+          }
+
+          .desc {
+            color: #999999;
+          }
+
+          .price {
+            font-size: 30px;
+            color: #FF3E34;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+          }
+        }
+      }
+    }
+  }
+
+  .count {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+
+    .label {
+      display: flex;
+
+      .radio {
+        height: 40px;
+        width: 40px;
+      }
+    }
+
+    .btn {
+      height: 70px;
+      width: 200px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-size: 30px;
+      // background-color: linear-gradient(to right,#FF6351, #FF9C55);
+      background-color: #FF6351;
+    }
+  }
+}
+
+.myRadio {
+  margin-right: 20px;
+
+  &>span {
+    padding: 2.5px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    margin-right: 5px;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.carNull {
+  display: flex;
+  flex-direction: column;
+  font-size: 50px;
+  align-items: center;
+  justify-content: center;
+  color: #aaaaaa;
+  height: 100%;
+}
